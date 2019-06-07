@@ -92,9 +92,22 @@
               </div>
 
               <!-- <div class="" id="test_wrapper"> <div class="test_item" id=""> XX </div> <div class="test_item" id=""> XX </div> </div> -->
-
             </div>
 
+
+            <div class="container">
+
+            <ul id="item_list">
+              <li v-for="item in items">
+                {{item.name}} {{item.desc}}
+              </li>
+            </ul>
+            </div>
+
+
+
+
+            <script src="js/utils.js"></script>
             <script src="js/component.js"></script>
           </body>
         </html>

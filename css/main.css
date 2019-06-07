@@ -27,8 +27,6 @@ body {
   border-radius: 2px;
 }
 
-.active {}
-
 .button {
   border-radius: 4px;
   text-align: center;
@@ -65,6 +63,9 @@ body {
   background-color: #89c7a6;
 }
 
+
+
+
 /*
   Elements for dashboard
 */
@@ -74,13 +75,14 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 12px;
 }
 
 #dashboard nav>div {
   color: #77a1ed;
   font-weight: bold;
 }
-
+/* Settings button goes to the right and in gray */
 #dashboard nav>div:last-child {
   color: #778088;
 }
@@ -184,6 +186,7 @@ body {
 
 #alerts>.list>ul>li>.importance {
   width: 10%;
+  min-width: 65px;
   text-align: right;
   line-height: 30px;
 }
@@ -249,4 +252,9 @@ body {
   height: 20px;
   width: 20px;
   background-color: rgba(255, 255, 255, .1);
+}
+
+
+#item_list {
+  background-color: gray;
 }

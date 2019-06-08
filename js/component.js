@@ -1,5 +1,5 @@
 var list = new Vue({
-  el: '#item_list',
+  el: '#alerts',
   data: {
     //items: [{"name":"Adam"},{"name":"Emma"}], // initialize empty array
     items: '', // initialize empty array

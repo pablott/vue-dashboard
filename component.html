@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vue.js"></script>
 
-
   </head>
   <body>
     <div class="container" id="dashboard">
@@ -59,29 +58,20 @@
               </div>
               <div class="list">
                 <ul>
-                  <li>
+                  <li v-for="item in items">
                     <div class="icon button highlight">🎂</div>
-
                     <div class="name">
-                      Adam Compton
+                      {{item.name}}
                     </div>
-                    <div class="desc">Adam's End of Year review coming up</div>
-                    <div class="date">Feb 03</div>
-                    <div class="importance">VERY
-                      <span class="bars high"></span></div>
+                    <div class="desc">{{item.desc}}</div>
+                    <div class="date">{{item.date}}</div>
+
+                    <div class="importance">{{item.importance}}
+                      <span v-bind:class="[item.importance]" class="bars"></span>
+                    </div>
                   </li>
-                  <div class="line"></div>
-                  <li>
-                    <div class="icon button highlight">🎂</div>
-                    <div class="name">
-                      Sophie O'Connor</div>
-                    <div class="desc">Sophie's End of Year review coming up</div>
-                    <div class="date">Feb 03</div>
-                    <div class="importance">LOW
-                      <span class="bars low"></span></div>
-                  </li>
-                  <div class="line"></div>
                 </ul>
+
                 <div class="dropdown button highlight" id="see_more">
                   SEE MORE ▼
                 </div>
@@ -93,19 +83,6 @@
 
               <!-- <div class="" id="test_wrapper"> <div class="test_item" id=""> XX </div> <div class="test_item" id=""> XX </div> </div> -->
             </div>
-
-
-            <div class="container">
-
-            <ul id="item_list">
-              <li v-for="item in items">
-                {{item.name}} {{item.desc}}
-              </li>
-            </ul>
-            </div>
-
-
-
 
             <script src="js/utils.js"></script>
             <script src="js/component.js"></script>

@@ -203,16 +203,18 @@ body {
 #alerts>.list>ul>li>.importance .bars.low {
   background-image: url('../img/prio_low.png');
 }
-#alerts>.list>ul>li>.importance .bars.med {
-  background-image: url('../img/prio_med.png');
+#alerts>.list>ul>li>.importance .bars.middle {
+  background-image: url('../img/prio_middle.png');
 }
-#alerts>.list>ul>li>.importance .bars.high {
-  background-image: url('../img/prio_high.png');
+#alerts>.list>ul>li>.importance .bars.very {
+  background-image: url('../img/prio_very.png');
 }
 
 
-#alerts>.list>ul>.line {
-  border-bottom: 1px solid #9ad2b4;
+#alerts>.list>ul>li>.line {
+  border-bottom: 10px solid #9ad2b4;
+  width:100%;
+  clear: both;
 }
 
 #see_more {

@@ -154,6 +154,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 16px 20px;
+  border-bottom: 1px solid #9ad2b4;
 }
 
 #alerts>.list>ul>li>div {
@@ -209,13 +210,6 @@ body {
 }
 #alerts>.list>ul>li>.importance .bars.very {
   background-image: url('../img/prio_very.png');
-}
-
-
-#alerts>.list>ul>li>.line {
-  border-bottom: 10px solid #9ad2b4;
-  width:100%;
-  clear: both;
 }
 
 #see_more {

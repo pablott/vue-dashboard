@@ -12,12 +12,12 @@ body {
 
 #dashboard {
   background-color: #4b535e;
-  padding: 40px;
+  padding: 20px 30px;
 }
 
 #alerts {
   color: #feffed;
-  margin-top: 40px;
+  margin-top: 30px;
   background-color: #6db990;
   padding-bottom: 20px;
 }

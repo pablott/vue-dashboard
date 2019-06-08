@@ -137,6 +137,8 @@ body {
 #alerts>.list {
   margin-top: 8px;
   border-top: 1px solid #9ad2b4;
+  overflow: hidden;
+  height: 261px;
 }
 
 #alerts>.list>ul {

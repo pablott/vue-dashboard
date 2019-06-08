@@ -56,7 +56,7 @@
               <div class="active" id="sorting">
                 IMPORTANCE ▼
               </div>
-              <div class="list">
+              <div class="list" ref="list">
                 <ul>
                   <li v-for="item in items">
                     <div class="icon button highlight">🎂</div>
@@ -72,11 +72,12 @@
                   </li>
                 </ul>
 
-                <div class="dropdown button highlight" id="see_more">
-                  SEE MORE ▼
-                </div>
-
               </div>
+
+              <div v-on:click="greet" class="dropdown button highlight" id="see_more">
+                SEE MORE ▼
+              </div>
+
               <div class="active" id="view_all">
                 VIEW ALL
               </div>

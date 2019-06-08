@@ -63,9 +63,6 @@ body {
   background-color: #89c7a6;
 }
 
-
-
-
 /*
   Elements for dashboard
 */
@@ -82,6 +79,7 @@ body {
   color: #77a1ed;
   font-weight: bold;
 }
+
 /* Settings button goes to the right and in gray */
 #dashboard nav>div:last-child {
   color: #778088;
@@ -205,9 +203,11 @@ body {
 #alerts>.list>ul>li>.importance .bars.low {
   background-image: url('../img/prio_low.png');
 }
+
 #alerts>.list>ul>li>.importance .bars.middle {
   background-image: url('../img/prio_middle.png');
 }
+
 #alerts>.list>ul>li>.importance .bars.very {
   background-image: url('../img/prio_very.png');
 }
@@ -250,7 +250,6 @@ body {
   width: 20px;
   background-color: rgba(255, 255, 255, .1);
 }
-
 
 #item_list {
   background-color: gray;

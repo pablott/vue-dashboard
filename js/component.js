@@ -5,12 +5,18 @@ var list = new Vue({
   },
 
   methods: {
-    greet: function (event) {
-      // Pick
+    // Method for unrolling alerts list
+    see_more: function (event) {
+      // Check if tab was clicked
       if (event) {
         console.log('list $refs', this.$refs);
-        this.$refs.list.style.height = '100%'
-        //alert(event.target.tagName)
+        console.log('event.target', event.target);
+
+        // Change height to show every item
+        this.$refs.list.style.height = '100%';
+        // Disable tab and shade it
+        event.target.disabled = true;
+        event.target.style.opacity = '.5';
       }
     }
   },

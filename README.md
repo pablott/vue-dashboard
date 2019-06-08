@@ -2,6 +2,6 @@
 
 * I have tried to be specific when using the CSS selectors, I tend to favor specificity because it avoids conflicts and favors readability. Even when an element could be just referred by its ID, I prefer giving some context,  like: #container > #myElement.
 
-* Either icons based on @font-face or SVG could be used. Unicode symbols don't cover all needed icons.
+* Either icons based on @font-face or SVG could be used. Unicode symbols don't work as well but avoid loading an extra asset. For SVG https://feathericons.com/ might work well. 
 
 * I have used 'sans-serif' font to avoid increasing loading times, but if I wanted to make it look the same @font-face is the right way.

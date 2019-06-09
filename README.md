@@ -15,3 +15,5 @@
 * Testing and debug has been carried in a local server in Firefox, but other servers/browsers should work. Code should be cross-browser compatible, vendor prefixes were used where needed.
 
 * For the stats in the dashboard, I have considered its data global ('values' array) for its instance, so each component can use it and react to it in a synchronized way. Changing 'values' will trigger update on each component.
+
+* Dashboard component outputs some instructions on startup, check it out on the command line.

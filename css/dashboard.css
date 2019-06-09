@@ -96,7 +96,7 @@
 /* Place indicator on middle of dial */
 #stats .dial .indicator {
   position: absolute;
-  top: 30px;
+  top: 35px;
 }
 
 .dial_wrapper {

@@ -11,7 +11,14 @@
 */
 
 
-var dashboard = new Vue({ el: '#dashboard' })
+var dashboard = new Vue({
+  el: '#dashboard',
+  data: {
+    current: '104',
+    values: [10, 20, 50, 70],
+  },
+
+})
 
 
 

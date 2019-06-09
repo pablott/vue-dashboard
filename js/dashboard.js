@@ -8,4 +8,16 @@ var dashboard = new Vue({
   data: {
     values: [10, 20, 50, 70],
   },
+
+  // This gets executed on startup of instance
+  mounted: function () {
+    console.log(`
+      DASHBOARD
+      How to use: copy and paste these commands in inspector's command line
+      dashboard.$data.values = [10,10,50,25,45]
+      dashboard.$data.values = [10,10,45]
+      dashboard.$data.values = [10,10,50,25,100,32.7]
+    `);
+  }
+
 })

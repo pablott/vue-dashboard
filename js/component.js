@@ -1,4 +1,4 @@
-var list = new Vue({
+var alerts = new Vue({
   el: '#alerts',
   data: {
     items: '', // initialize empty array
@@ -6,11 +6,11 @@ var list = new Vue({
   },
 
   methods: {
-    // Method for unrolling alerts list
+    // Method for unrolling alerts alerts
     see_more: function(event) {
       // Check if tab was clicked
       if (event) {
-        console.log('list $refs', this.$refs);
+        console.log('alerts $refs', this.$refs);
         console.log('event.target', event.target);
 
         // Change height to show every item
@@ -57,8 +57,8 @@ var list = new Vue({
 // Load JSON with alerts items, parse, create objects
 loadJSON(function(response) {
   // Parse JSON string into items reactive data
-  list.items = JSON.parse(response);
-  console.log('list response:', response);
-  console.log('list JSON.parse:', JSON.parse(response));
-  console.log('list Vue el items:', list.items);
+  alerts.items = JSON.parse(response);
+  console.log('alerts response:', response);
+  console.log('alerts JSON.parse:', JSON.parse(response));
+  console.log('alerts Vue el items:', alerts.items);
 });

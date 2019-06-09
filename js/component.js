@@ -49,9 +49,6 @@ var alerts = new Vue({
     }
   },
 
-  mounted() { // when the Vue app is booted up, this is run automatically.
-  }
-
 })
 
 // Load JSON with alerts items, parse, create objects

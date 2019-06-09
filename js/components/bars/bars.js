@@ -41,7 +41,7 @@ Vue.component('bars', {
       </div>
 
       <div class="legend">
-        Last 12 months
+        Last {{values.length}} months
       </div>
     </div>
     `

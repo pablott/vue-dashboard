@@ -94,21 +94,24 @@ body {
   flex: auto;
   text-align: center;
   color: white;
+  height: 120px;
 }
 
 #stats .indicator {
+  font-size: 40px;
   height: 80px;
+  color: #77a1ed;
 }
 
+/*
 #stats .indicator::before {
   content: 'XX';
   font-size: 40px;
   color: #77a1ed;
-}
-
+}*/
 #stats .legend {
-  font-size: 40px;
-  color: #77a1ed;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
 /*

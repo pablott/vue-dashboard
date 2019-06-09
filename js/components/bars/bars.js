@@ -17,7 +17,7 @@ Vue.component('bars', {
     bars: function () {
       // Get max_value to normalize bar height
       var max_value = Math.max(...this.values);
-      console.log('bars: max_value', max_value);
+
       // Create array to store bar heights (normalize to %)
       var bars = [];
 
@@ -26,6 +26,11 @@ Vue.component('bars', {
         var height = this.values[i]/max_value * 100;
         bars.push(height);
       }
+
+      // Log
+      console.log('bars: max_value', max_value);
+      console.log('bars: bars', bars);
+
       return bars;
     }
   },

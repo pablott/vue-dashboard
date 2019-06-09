@@ -1,0 +1,102 @@
+/*
+  Elements for alerts list
+*/
+/* Control bar */
+#alerts>.control_bar {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#alerts>.control_bar>.controls {
+  font-weight: bold;
+}
+
+#alerts>.control_bar>.controls>div {
+  float: left;
+  margin-left: 4px;
+  padding: 6px 12px;
+}
+
+/* List */
+#alerts>.list {
+  margin-top: 8px;
+  border-top: 1px solid #9ad2b4;
+  overflow: hidden;
+  height: 261px;
+}
+
+#alerts>.list>ul {
+  list-style: none;
+  list-style-position: inside;
+  padding-left: 0px;
+  margin: 0;
+}
+
+#alerts>.list>ul>li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  border-bottom: 1px solid #9ad2b4;
+}
+
+#alerts>.list>ul>li>div {
+  /*display: inline-block;
+  vertical-align: middle;
+  line-height: 40px;*/
+}
+
+#alerts>.list>ul>li>.icon {
+  flex-basis: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 20px;
+  float: left;
+}
+
+#alerts>.list>ul>li>.name {
+  font-weight: bold;
+  width: 15%;
+  min-width: 80px;
+}
+
+#alerts>.list>ul>li>.desc {
+  flex-basis: 50%;
+}
+
+#alerts>.list>ul>li>.date {
+  flex-basis: 10%;
+}
+
+#alerts>.list>ul>li>.importance {
+  width: 10%;
+  min-width: 85px;
+  text-align: right;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+#alerts>.list>ul>li>.importance .bars {
+  position: relative;
+  top: 10px;
+  width: 14px;
+  height: 14px;
+  float: right;
+  margin-left: 10px;
+}
+
+#alerts>.list>ul>li>.importance .bars.low {
+  background-image: url('../img/prio_low.png');
+}
+
+#alerts>.list>ul>li>.importance .bars.middle {
+  background-image: url('../img/prio_middle.png');
+}
+
+#alerts>.list>ul>li>.importance .bars.very {
+  background-image: url('../img/prio_very.png');
+}

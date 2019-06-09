@@ -1,0 +1,50 @@
+/*
+  Elements for dashboard
+*/
+/* Nav bar */
+#dashboard nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+#dashboard nav>div {
+  color: #77a1ed;
+  font-weight: bold;
+}
+
+/* Settings button goes to the right and in gray */
+#dashboard nav>div:last-child {
+  color: #778088;
+}
+
+#dashboard #stats {
+  display: flex;
+  flex-direction: row;
+}
+
+#stats>div {
+  flex: auto;
+  text-align: center;
+  color: white;
+  height: 120px;
+}
+
+#stats .indicator {
+  font-size: 40px;
+  height: 80px;
+  color: #77a1ed;
+}
+
+/*
+#stats .indicator::before {
+  content: 'XX';
+  font-size: 40px;
+  color: #77a1ed;
+}*/
+#stats .legend {
+  font-size: 16px;
+  text-transform: uppercase;
+}

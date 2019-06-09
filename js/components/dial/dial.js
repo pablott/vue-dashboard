@@ -22,7 +22,7 @@ Vue.component('dial', {
       var sum_value = this.values.reduce((a, b) => a + b, 0);
 
       // Calculate rotation normalized to 180deg
-      var rotation = 180 - (max_value/sum_value * 180);
+      var rotation = (max_value/sum_value * 180);
 
       // Log
       console.log('dial: max_value', max_value);

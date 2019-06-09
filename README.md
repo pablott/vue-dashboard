@@ -11,3 +11,5 @@
 * SEE MORE tab and sorting by importance are functional. The alerts list is loaded from a JSON file.
 
 * The JSON loading could have been done with Axios but I prefered to keep dependencies.
+
+* Testing and debug has been carried in a local server in Firefox, but other servers/browsers should work. Code should be cross-browser compatible, vendor prefixes were used where needed.

@@ -43,8 +43,40 @@
   content: 'XX';
   font-size: 40px;
   color: #77a1ed;
-}*/
+}
+*/
 #stats .legend {
   font-size: 16px;
   text-transform: uppercase;
+  margin-top: 12px;
+}
+
+/* .bars > .bar_wrapper > .bar_fg/.bar_bg*/
+#stats .bars {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 80px;
+}
+
+.bar_wrapper {
+  position: relative;
+  width: 14px;
+  height: 80px;
+}
+
+.bar_fg {
+  position: absolute;
+  bottom: 0;
+  border: 1px solid #77a1ed;
+  background-color: rgba(119, 161, 237, .4);
+  width: 14px;
+  border-radius: 6px 6px 0 0;
+}
+
+.bar_bg {
+  height: 100%;
+  width: 16px;
+  background-color: #5a606a;
+  border-radius: 6px 6px 0 0;
 }

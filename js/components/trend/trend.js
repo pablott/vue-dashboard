@@ -54,7 +54,7 @@ Vue.component('trend', {
   template: `
     <div>
       <div class="indicator">
-        {{get_current}}/{{get_diff}}
+        {{get_current}}/(Δ{{get_diff}})
       </div>
       <div class="legend">
         {{get_trend_text}}

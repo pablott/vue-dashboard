@@ -33,7 +33,7 @@
 }
 
 #stats .indicator {
-  font-size: 40px;
+  font-size: 32px;
   height: 80px;
   color: #77a1ed;
 }
@@ -96,7 +96,7 @@
 /* Place indicator on middle of dial */
 #stats .dial .indicator {
   position: absolute;
-  top: 35px;
+  top: 45px;
 }
 
 .dial_wrapper {

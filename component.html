@@ -22,11 +22,7 @@
         <div class="button">⚙</div>
       </nav>
       <div id="stats">
-
-        <div id="clients">
-          <div class="indicator">203</div>
-          <div class="legend">Active clients</div>
-        </div>
+        <dial :values="values"></dial>
 
         <bars :values="values"></bars>
 
@@ -88,9 +84,9 @@
     <script src="js/utils.js"></script>
     <!-- Components are loaded before instances!!!! -->
     <!--<script src="js/components/test/test.js"></script>-->
+    <script src="js/components/dial/dial.js"></script>
     <script src="js/components/trend/trend.js"></script>
     <script src="js/components/bars/bars.js"></script>
-
 
     <script src="js/dashboard.js"></script>
     <script src="js/alerts.js"></script>

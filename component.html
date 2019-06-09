@@ -8,7 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="css/main.css">
-    <!-- Early load to make sure Vue is initialized -->
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/alerts.css">
+
+    <!-- Early load to make sure window is initialized -->
     <script src="js/vue.js"></script>
   </head>
 
@@ -25,10 +28,7 @@
           <div class="legend">Active clients</div>
         </div>
 
-        <div id="last">
-          <div class="indicator">BARS</div>
-          <div class="legend">Last 12 months</div>
-        </div>
+        <bars :values="values"></bars>
 
         <trend :values="values"></trend>
       </div>
@@ -86,11 +86,13 @@
 
 
     <script src="js/utils.js"></script>
-    <script src="js/components/test/test.js"></script>
+    <!--<script src="js/components/test/test.js"></script>-->
     <script src="js/components/trend/trend.js"></script>
+    <script src="js/components/bars/bars.js"></script>
+
 
     <script src="js/dashboard.js"></script>
-    <script src="js/component.js"></script>
+    <script src="js/alerts.js"></script>
 
   </body>
 </html>

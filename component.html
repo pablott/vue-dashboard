@@ -19,92 +19,78 @@
         <div class="button">⚙</div>
       </nav>
       <div id="stats">
+
         <div id="clients">
-          <div class="indicator"></div>
-          <div class="legend">203</div>
-          <p>Active clients</p>
+          <div class="indicator">203</div>
+          <div class="legend">Active clients</div>
         </div>
+
         <div id="last">
-          <div class="indicator"></div>
-          <div class="legend">BARS
-          </div>
-          <p>Last 12 months</p>
+          <div class="indicator">BARS</div>
+          <div class="legend">Last 12 months</div>
         </div>
-          <div id="increase">
 
-
-
-            <!-- <button-counter></button-counter> -->
-            <trend
-              current="34"
-              :values="values">
-            </trend>
-
-
-
-
-
-
-
-          </div>
-        </div>
+        <trend :values="values"></trend>
       </div>
-      <!-- End of dashboard -->
+    </div>
+    <!-- End of dashboard -->
 
-      <!-- Start of Alert list -->
-      <div class="container" id="alerts">
-        <div class="control_bar">
-          <div id="summary">
-            <b>ALERTS</b>
-            &emsp; Latest alerts ({{items.length}})
-          </div>
-          <div class="controls">
-            <div class="button">◔</div>
-            <div class="button funnel">▽</div>
-            <div class="button">⎌</div>
-            <div class="button">⚙</div>
-            <div class="dropdown button">SAVE ▼</div>
-          </div>
-
+    <!-- Start of Alert list -->
+    <div class="container" id="alerts">
+      <div class="control_bar">
+        <div id="summary">
+          <b>ALERTS</b>
+          &emsp; Latest alerts ({{items.length}})
         </div>
-        <div class="active" id="sorting" v-on:click="sort" ref="sorting">
-          IMPORTANCE ▼
-        </div>
-        <div class="list" ref="list">
-          <ul>
-            <li v-for="item in items" v-bind:key="item.name">
-              <div class="icon button highlight">🎂</div>
-              <div class="name">
-                {{item.name}}
-              </div>
-              <div class="desc">{{item.desc}}</div>
-              <div class="date">{{item.date}}</div>
-
-              <div class="importance">{{item.importance}}
-                <span v-bind:class="[item.importance]" class="bars"></span>
-              </div>
-            </li>
-          </ul>
-
+        <div class="controls">
+          <div class="button">◔</div>
+          <div class="button funnel">▽</div>
+          <div class="button">⎌</div>
+          <div class="button">⚙</div>
+          <div class="dropdown button">SAVE ▼</div>
         </div>
 
-        <div v-on:click="see_more" class="dropdown button highlight" id="see_more">
-          SEE MORE ▼
-        </div>
+      </div>
+      <div class="active" id="sorting" v-on:click="sort" ref="sorting">
+        IMPORTANCE ▼
+      </div>
+      <div class="list" ref="list">
+        <ul>
+          <li v-for="item in items" v-bind:key="item.name">
+            <div class="icon button highlight">🎂</div>
+            <div class="name">
+              {{item.name}}
+            </div>
+            <div class="desc">{{item.desc}}</div>
+            <div class="date">{{item.date}}</div>
 
-        <div class="active" id="view_all">
-          VIEW ALL
-        </div>
+            <div class="importance">{{item.importance}}
+              <span v-bind:class="[item.importance]" class="bars"></span>
+            </div>
+          </li>
+        </ul>
 
-        <!-- <div class="" id="test_wrapper"> <div class="test_item" id=""> XX </div> <div class="test_item" id=""> XX </div> </div> -->
       </div>
 
-      <script src="js/utils.js"></script>
-      <script src="js/components/test/test.js"></script>
-      <script src="js/components/trend/trend.js"></script>
+      <div v-on:click="see_more" class="dropdown button highlight" id="see_more">
+        SEE MORE ▼
+      </div>
 
-      <script src="js/dashboard.js"></script>
-      <script src="js/component.js"></script>
+      <div class="active" id="view_all">
+        VIEW ALL
+      </div>
 
-    </body>
-  </html>
+      <!-- <div class="" id="test_wrapper"> <div class="test_item" id=""> XX </div> <div class="test_item" id=""> XX </div> </div> -->
+    </div>
+    <!-- End of alert list -->
+
+
+    <script src="js/utils.js"></script>
+    <script src="js/components/test/test.js"></script>
+    <script src="js/components/trend/trend.js"></script>
+
+    <script src="js/dashboard.js"></script>
+    <script src="js/component.js"></script>
+
+  </body>
+</html>

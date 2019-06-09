@@ -15,10 +15,13 @@ Vue.component('bars', {
   // 'values' on parent instance can be mutated and it will propagate to children components.
   computed: {
     bars: function () {
+      // Get max_value to normalize bar height
       var max_value = Math.max(...this.values);
       console.log('bars: max_value', max_value);
+      // Create array to store bar heights (normalize to %)
       var bars = [];
 
+      // Go through values, calculate normalize value and store in array
       for (var i = 0; i < this.values.length; i++) {
         var height = this.values[i]/max_value * 100;
         bars.push(height);

@@ -13,7 +13,7 @@ Vue.component('trend', {
   watch: {
     // Watch the changes, this does nothing, just showing the feature and logging
     values: function(val) {
-      console.log('values were changed to: ', val);
+      console.log('trend: values were changed to: ', val);
     }
   },
 

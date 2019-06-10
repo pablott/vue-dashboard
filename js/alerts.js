@@ -1,3 +1,7 @@
+// Define a new instance for the alerts list.
+
+
+
 var alerts = new Vue({
   el: '#alerts',
   data: {

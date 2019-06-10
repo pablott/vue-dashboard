@@ -48,10 +48,10 @@ var dashboard = new Vue({
       for (var i = 0; i < this.values.length; i++) {
         // Random number from 0 to 100, make sure is passed as int not string
         var rand = parseInt(Math.random() * 100);
-        this.values[i] = rand;
-        // Push so Vue can actually propagate the changes
+        // Use splice so Vue can actually propagate the changes
         // (just changing the value of an array item is not enough!)
-        this.values.push();
+        // WRONG: this.values[i] = rand;
+        this.values.splice(i, 1, rand)
       }
     }
 

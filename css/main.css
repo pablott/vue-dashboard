@@ -11,21 +11,16 @@ body {
   border-radius: 4px;
 }
 
-#dashboard {
+.container__dashboard {
   background-color: #4b535e;
   padding: 20px 30px;
 }
 
-#alerts {
+.container__alerts {
   color: #feffed;
   margin-top: 30px;
   background-color: #6db990;
   padding-bottom: 20px;
-}
-
-.dropdown {
-  border: 1px solid #89c7a6;
-  border-radius: 2px;
 }
 
 .button {
@@ -45,8 +40,13 @@ body {
   background-color: rgba(255, 255, 255, .5);
 }
 
+.button--dropdown {
+  border: 1px solid #89c7a6;
+  border-radius: 2px;
+}
+
 /* Active to mouse but not really a button */
-.active {
+.button--active {
   cursor: pointer;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -56,15 +56,15 @@ body {
   user-select: none;
 }
 
-.active:hover {
+.button--active:hover {
   color: #4b535e;
 }
 
-.highlight {
+.button--highlight {
   background-color: #89c7a6;
 }
 
-#see_more {
+.button--tab {
   border-radius: 0 0 8px 8px;
   width: 150px;
   font-size: 80%;
@@ -72,13 +72,13 @@ body {
   margin-right: auto;
 }
 
-#view_all {
+.button--view_all {
   font-weight: bold;
   width: 80px;
   margin-left: 20px;
 }
 
-#sorting {
+.button--sorting {
   width: 200px;
   margin-left: auto;
   text-align: right;

@@ -16,7 +16,7 @@
   </head>
 
   <body>
-    <div class="container" id="dashboard">
+    <div class="container container__dashboard" id="dashboard">
       <nav>
         <div>CLIENTS &ensp; ▶</div>
         <div class="button">⚙</div>
@@ -32,51 +32,49 @@
     <!-- End of dashboard -->
 
     <!-- Start of Alert list -->
-    <div class="container" id="alerts">
+    <div class="container container__alerts" id="alerts">
       <div class="control_bar">
-        <div id="summary">
+        <div class="control_bar__summary">
           <b>ALERTS</b>
           &emsp; Latest alerts ({{items.length}})
         </div>
-        <div class="controls">
-          <div class="button">◔</div>
-          <div class="button funnel">▽</div>
-          <div class="button">⎌</div>
-          <div class="button">⚙</div>
-          <div class="dropdown button">SAVE ▼</div>
+        <div class="control_bar__controls">
+          <div class="control_bar__controls--right button">◔</div>
+          <div class="control_bar__controls--right button">▽</div>
+          <div class="control_bar__controls--right button">⎌</div>
+          <div class="control_bar__controls--right button">⚙</div>
+          <div class="control_bar__controls--right button button--dropdown">SAVE ▼</div>
         </div>
 
       </div>
-      <div class="active" id="sorting" v-on:click="sort" ref="sorting">
+      <div class="control_bar__controls button--sorting button--active" v-on:click="sort" ref="sorting">
         IMPORTANCE ▼
       </div>
       <div class="list" ref="list">
         <ul>
-          <li v-for="item in items" v-bind:key="item.name">
-            <div class="icon button highlight">🎂</div>
-            <div class="name">
+          <li v-for="item in items" v-bind:key="item.name" class="list__item">
+            <div class="list__item__icon button button--highlight">🎂</div>
+            <div class="list__item__name">
               {{item.name}}
             </div>
-            <div class="desc">{{item.desc}}</div>
-            <div class="date">{{item.date}}</div>
+            <div class="list__item__desc">{{item.desc}}</div>
+            <div class="list__item__date">{{item.date}}</div>
 
-            <div class="importance">{{item.importance}}
-              <span v-bind:class="[item.importance]" class="bars"></span>
+            <div class="list__item__importance">{{item.importance}}
+              <span v-bind:class="'list__item__bars--'+[item.importance]" class="list__item__bars"></span>
             </div>
           </li>
         </ul>
 
       </div>
 
-      <div v-on:click="see_more" class="dropdown button highlight" id="see_more">
+      <div v-on:click="see_more" class="button button--dropdown button--highlight button--tab">
         SEE MORE ▼
       </div>
 
-      <div class="active" id="view_all">
+      <div class="button--active button--view_all">
         VIEW ALL
       </div>
-
-      <!-- <div class="" id="test_wrapper"> <div class="test_item" id=""> XX </div> <div class="test_item" id=""> XX </div> </div> -->
     </div>
     <!-- End of alert list -->
 

@@ -2,7 +2,7 @@
   Elements for alerts list
 */
 /* Control bar */
-#alerts>.control_bar {
+.control_bar {
   padding: 20px;
   display: flex;
   flex-direction: row;
@@ -10,32 +10,32 @@
   align-items: center;
 }
 
-#alerts>.control_bar>.controls {
+.control_bar__controls {
   font-weight: bold;
 }
 
-#alerts>.control_bar>.controls>div {
+.control_bar__controls--right {
   float: left;
   margin-left: 4px;
   padding: 6px 12px;
 }
 
 /* List */
-#alerts>.list {
+.list {
   margin-top: 8px;
   border-top: 1px solid #9ad2b4;
   overflow: hidden;
   height: 261px;
 }
 
-#alerts>.list>ul {
+.list>ul {
   list-style: none;
   list-style-position: inside;
   padding-left: 0px;
   margin: 0;
 }
 
-#alerts>.list>ul>li {
+.list__item {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -44,14 +44,7 @@
   border-bottom: 1px solid #9ad2b4;
 }
 
-/*
-#alerts>.list>ul>li>div {
-  display: inline-block;
-  vertical-align: middle;
-  line-height: 40px;
-}
-*/
-#alerts>.list>ul>li>.icon {
+.list__item__icon {
   flex-basis: 30px;
   height: 30px;
   line-height: 30px;
@@ -59,21 +52,21 @@
   float: left;
 }
 
-#alerts>.list>ul>li>.name {
+.list__item__name {
   font-weight: bold;
   width: 15%;
   min-width: 80px;
 }
 
-#alerts>.list>ul>li>.desc {
+.list__item__desc {
   flex-basis: 50%;
 }
 
-#alerts>.list>ul>li>.date {
+.list__item__date {
   flex-basis: 10%;
 }
 
-#alerts>.list>ul>li>.importance {
+.list__item__importance {
   width: 10%;
   min-width: 85px;
   text-align: right;
@@ -81,7 +74,7 @@
   text-transform: uppercase;
 }
 
-#alerts>.list>ul>li>.importance .bars {
+.list__item__bars {
   position: relative;
   top: 10px;
   width: 14px;
@@ -90,14 +83,14 @@
   margin-left: 10px;
 }
 
-#alerts>.list>ul>li>.importance .bars.low {
+.list__item__bars--low {
   background-image: url('../img/prio_low.png');
 }
 
-#alerts>.list>ul>li>.importance .bars.middle {
+.list__item__bars--middle {
   background-image: url('../img/prio_middle.png');
 }
 
-#alerts>.list>ul>li>.importance .bars.very {
+.list__item__bars--very {
   background-image: url('../img/prio_very.png');
 }

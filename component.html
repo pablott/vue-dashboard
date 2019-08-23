@@ -17,11 +17,11 @@
 
   <body>
     <div class="container container__dashboard" id="dashboard">
-      <nav>
-        <div>CLIENTS &ensp; ▶</div>
-        <div class="button">⚙</div>
+      <nav class="dashboard__nav">
+        <div class="dashboard__nav__item">CLIENTS &ensp; ▶</div>
+        <div class="dashboard__nav__item button">⚙</div>
       </nav>
-      <div id="stats">
+      <div class="dashboard__stats" id="stats">
         <dial :values="values"></dial>
 
         <bars :values="values"></bars>

@@ -40,18 +40,18 @@ Vue.component('dial', {
 
   // Template using string literals for splitting it in multilines
   template: `
-    <div>
-      <div class="dial">
+    <div class="dashboard__stats__wrapper">
+      <div class="dashboard__stats__wrapper__dial">
 
-        <div class="dial_wrapper">
-          <div class="dial_bg"></div>
-          <div class="dial_fg" :style="{ transform: 'rotate('+ dial_values.rotation +'deg)'}"></div>
+        <div class="dashboard__stats__wrapper__dial__gauge_wrapper">
+          <div class="dashboard__stats__wrapper__dial__gauge_wrapper--dial_bg"></div>
+          <div class="dashboard__stats__wrapper__dial__gauge_wrapper--dial_fg" :style="{ transform: 'rotate('+ dial_values.rotation +'deg)'}"></div>
         </div>
 
-        <div class="indicator">{{dial_values.sum_value}}</div>
+        <div class="dashboard__stats__wrapper__indicator dashboard__stats__wrapper__indicator--middle">{{dial_values.sum_value}}</div>
       </div>
 
-      <div class="legend">
+      <div class="dashboard__stats__wrapper__legend">
         Active clients
       </div>
     </div>

@@ -40,15 +40,15 @@ Vue.component('bars', {
 
   // Template using string literals for splitting it in multilines
   template: `
-    <div>
-      <div class="bars">
-        <div class="bar_wrapper" v-for="bar in bars">
-          <div class="bar_bg"></div>
-          <div class="bar_fg" v-bind:style="{ height: bar + '%' }"></div>
+    <div class="dashboard__stats__wrapper">
+      <div class="dashboard__stats__wrapper__bars">
+        <div class="dashboard__stats__wrapper__bars__bars_wrapper" v-for="bar in bars">
+          <div class="dashboard__stats__wrapper__bars__bars_wrapper--bar_bg"></div>
+          <div class="dashboard__stats__wrapper__bars__bars_wrapper--bar_fg" v-bind:style="{ height: bar + '%' }"></div>
         </div>
       </div>
 
-      <div class="legend">
+      <div class="dashboard__stats__wrapper__legend">
         Last {{values.length}} months
       </div>
     </div>

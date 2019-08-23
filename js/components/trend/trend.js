@@ -52,11 +52,11 @@ Vue.component('trend', {
 
   // Template using string literals for splitting it in multilines
   template: `
-    <div>
-      <div class="indicator">
+    <div class="dashboard__stats__wrapper">
+      <div class="dashboard__stats__wrapper__indicator">
         {{get_current}}/(Δ{{get_diff}})
       </div>
-      <div class="legend">
+      <div class="dashboard__stats__wrapper__legend">
         {{get_trend_text}}
       </div>
     </div>
